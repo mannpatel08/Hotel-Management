@@ -1,0 +1,35 @@
+{
+  "rooms": [
+    {
+      "id": "1",
+      "name": "Deluxe Room",
+      "type": "Deluxe",
+      "price": 3000,
+      "available": true
+    },
+    {
+      "id": "2",
+      "name": "Suite Room",
+      "type": "Suite",
+      "price": 5000,
+      "available": true
+    }
+  ],
+  "reservations": [
+    {
+      "id": "3cef",
+      "name": "mann patel",
+      "room": "delux",
+      "checkin": "2026-03-12",
+      "checkout": "2026-03-20"
+    },
+    {
+      "id": "dd90",
+      "name": "twisha",
+      "room": "suite",
+      "checkin": "2026-03-19",
+      "checkout": "2026-03-22"
+    }
+  ],
+  "$schema": "./node_modules/json-server/schema.json"
+}
