@@ -1,16 +1,183 @@
-# React + Vite
+# Hotel Management System (React + Redux)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A simple **Hotel Management System** built using **React.js, Redux, Bootstrap, and JSON Server**.
+This project allows users to view rooms, make reservations, and manage bookings using CRUD operations.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 📌 Project Overview
 
-## React Compiler
+The Hotel Management System is a web application that helps manage hotel room bookings.
+Users can view available rooms, reserve a room, and check reservation details.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+The application uses **Redux for state management** and **JSON Server as a mock backend API** to simulate real server operations.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Features
+
+* View available hotel rooms
+* Book / reserve a room
+* Display reservation list
+* Cancel reservations
+* Responsive UI using Bootstrap
+* State management using Redux
+* Backend simulation using JSON Server
+* CRUD operations for reservation management
+
+---
+
+## 🛠 Technologies Used
+
+* React.js
+* Redux
+* Redux Thunk
+* React Router DOM
+* Bootstrap
+* JSON Server
+* JavaScript (ES6)
+* HTML5 & CSS3
+
+---
+
+## 📂 Project Structure
+
+```
+src
+│
+├── components
+│   ├── Navbar.jsx
+│   ├── RoomList.jsx
+│   ├── ReservationForm.jsx
+│   ├── ReservationList.jsx
+│   └── PrivateRoute.jsx
+│
+├── redux
+│   ├── actions.jsx
+│   ├── reducers.jsx
+│   └── store.jsx
+│
+├── App.jsx
+├── main.jsx
+└── styles.css
+```
+
+---
+
+## ⚙️ Installation & Setup
+
+### 1️⃣ Clone the project
+
+```
+git clone <repository-link>
+```
+
+### 2️⃣ Install dependencies
+
+```
+npm install
+```
+
+### 3️⃣ Install Bootstrap
+
+```
+npm install bootstrap
+```
+
+### 4️⃣ Run React App
+
+```
+npm run dev
+```
+
+The application will run at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🔧 Setup JSON Server (Mock Backend)
+
+Create a file called **db.json** in the root folder.
+
+Example:
+
+```
+{
+  "rooms": [
+    {
+      "id": 1,
+      "name": "Deluxe Room",
+      "type": "Deluxe",
+      "price": 3000,
+      "available": true
+    }
+  ],
+  "reservations": []
+}
+```
+
+Run JSON Server:
+
+```
+npx json-server --watch db.json --port 5000
+```
+
+API endpoints:
+
+```
+http://localhost:5000/rooms
+http://localhost:5000/reservations
+```
+
+---
+
+## 📊 Application Workflow
+
+1. Rooms are fetched from the API and displayed.
+2. Users can book a room using the reservation form.
+3. The reservation is saved to JSON Server.
+4. Reservation list fetches and displays booking data.
+5. Users can cancel reservations.
+
+---
+
+## 🎯 Key Concepts Used
+
+* React Functional Components
+* React Hooks (`useState`, `useEffect`)
+* Redux Global State Management
+* Redux Thunk for async API calls
+* React Router for navigation
+* Bootstrap for responsive UI
+
+---
+
+## 📷 Screens
+
+* Room List Page
+* Reservation Form
+* Reservation List Table
+
+---
+
+## 📌 Future Improvements
+
+* Add room images
+* Add room availability filter
+* Add user authentication
+* Add update/edit reservation feature
+
+---
+
+## 👨‍💻 Author
+
+**Mann Patel**
+
+---
+
+## 📄 License
+
+This project is for educational and learning purposes.
