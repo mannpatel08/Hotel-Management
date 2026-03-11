@@ -27,19 +27,6 @@ The application uses **Redux for state management** and **JSON Server as a mock 
 
 ---
 
-## 🛠 Technologies Used
-
-* React.js
-* Redux
-* Redux Thunk
-* React Router DOM
-* Bootstrap
-* JSON Server
-* JavaScript (ES6)
-* HTML5 & CSS3
-
----
-
 ## 📂 Project Structure
 
 ```
@@ -64,75 +51,6 @@ src
 
 ---
 
-## ⚙️ Installation & Setup
-
-### 1️⃣ Clone the project
-
-```
-git clone <repository-link>
-```
-
-### 2️⃣ Install dependencies
-
-```
-npm install
-```
-
-### 3️⃣ Install Bootstrap
-
-```
-npm install bootstrap
-```
-
-### 4️⃣ Run React App
-
-```
-npm run dev
-```
-
-The application will run at:
-
-```
-http://localhost:5173
-```
-
----
-
-## 🔧 Setup JSON Server (Mock Backend)
-
-Create a file called **db.json** in the root folder.
-
-Example:
-
-```
-{
-  "rooms": [
-    {
-      "id": 1,
-      "name": "Deluxe Room",
-      "type": "Deluxe",
-      "price": 3000,
-      "available": true
-    }
-  ],
-  "reservations": []
-}
-```
-
-Run JSON Server:
-
-```
-npx json-server --watch db.json --port 5000
-```
-
-API endpoints:
-
-```
-http://localhost:5000/rooms
-http://localhost:5000/reservations
-```
-
----
 
 ## 📊 Application Workflow
 
